@@ -1,0 +1,14 @@
+{
+  "data": {
+    "segments_csv": "../outputs/tables/segments.csv",
+    "prediction_csv": "../outputs/tables/prediction_windows.csv",
+    "abr_outcomes_csv": "../outputs/tables/replay_index.csv",
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2,
+    "split_seed": 17
+  },
+  "model": {"hidden_dim": 96, "latent_dim": 32, "ensemble_size": 3},
+  "training": {"epochs": 20, "batch_size": 32, "sequence_length": 12, "rollout_horizon": 6},
+  "device": "cpu",
+  "seed": 7
+}
