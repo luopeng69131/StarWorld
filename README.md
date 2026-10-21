@@ -12,17 +12,25 @@
 
 [English](README.md) | [简体中文](README_CN.md)
 
-[Overview](#overview) · [Quick Start](#quick-start) · [Method](#method) · [Data](#starlink-data) · [Documentation](#documentation)
+[Background](#background) · [Overview](#overview) · [Quick Start](#quick-start) · [Method](#method) · [Data](#starlink-data) · [Documentation](#documentation)
 
 </div>
 
-## Why StarWorld?
+## Background
 
-Starlink access conditions change over time. Similar recent measurements can lead to stable, volatile, or low-capacity continuations, and each continuation can affect throughput prediction and video playback differently. Understanding a configuration therefore calls for several plausible futures and a way to follow their effects across system layers.
+Starlink supports broadband connectivity across fixed, mobile, and maritime settings. Its access conditions vary over time, so similar observed histories can lead to stable, volatile, or low-capacity continuations. These differences propagate into throughput estimates, bitrate decisions, buffer levels, and playback quality.
 
-**StarWorld provides a cross-layer imagination environment.** Starting from an observed history, it samples network futures, executes prediction and streaming processes along those futures, and compares the resulting playback outcomes. A calibrated **Trust Gate** assesses uncertainty, data support, and rollout horizon to determine when the imagined results can be used.
+<p align="center">
+  <img src="docs/assets/background.png" width="100%" alt="Starlink access across fixed, mobile, and maritime settings, with alternative network futures propagating into prediction and streaming outcomes.">
+</p>
+
+*Illustration of how one observed history can develop into different network futures and prediction and playback outcomes.*
+
+Understanding these cross-layer effects calls for multiple plausible futures and a common environment for following prediction and streaming behavior along each future.
 
 ## Overview
+
+**StarWorld provides a cross-layer imagination environment.** Starting from an observed history, it samples network futures, executes prediction and streaming processes along those futures, and compares the resulting playback outcomes. A calibrated **Trust Gate** assesses uncertainty, data support, and rollout horizon to determine when the imagined results can be used.
 
 <p align="center">
   <img src="docs/assets/concept.png" width="100%" alt="Observed Starlink history and candidate configurations enter StarWorld, producing multiple plausible futures and configuration outcomes.">
